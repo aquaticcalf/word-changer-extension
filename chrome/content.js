@@ -1,4 +1,4 @@
-function randomlyChangeWord(word) {
+function randomlychangeword(word) {
   if (word.length <= 3) return word
   newword = word.split('')
   
