@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "word changer",
+  "version": "1.0",
+  "description": "a chrome extension that randomly changes words as you type",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
