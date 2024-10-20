@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "word changer",
   "version": "1.0",
-  "description": "a chrome extension that randomly changes words as you type",
+  "description": "a firefox extension that randomly changes words as you type",
   "permissions": [
     "activeTab"
   ],
