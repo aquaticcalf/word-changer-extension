@@ -1,15 +1,11 @@
 function randomlychangeword(word) {
   if (word.length <= 3) return word
-  newword = word.split('')
-  
-  for (let i = 1; i < newword.length - 1; i++) {
-    if (Math.random() < 0.3) {
-      let j = Math.floor(Math.random() * (newword.length - 2)) + 1
-      [newword[i], newword[j]] = [newword[j], newword[i]]
-    }
+  let middle = word.slice(1, -1).split('')
+  for (let i = middle.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[middle[i], middle[j]] = [middle[j], middle[i]]
   }
-  
-  return newword.join('')
+  return word[0] + middle.join('') + word[word.length - 1]
 }
 
 function handleinput(event) {
